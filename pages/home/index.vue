@@ -1,10 +1,10 @@
 <template>
   <div>
+    <h1 class="z-title">Hi, I am Alex AI</h1>
     <div class="z-home-content">
-      <h1 class="z-title">Hi, I am Alex AI</h1>
       <p class="z-subtitle">A full stack developer</p>
       <p class="z-content">
-        <strong>Full-stack software developer</strong> with plenty experience
+        <strong>Full-stack software developer</strong> with plenty of experience
         working on SaaS products. Fall in love with
         <strong>Javascript & Python</strong>, located in Toronto Area. Eager to
         create amazing stuffs.
@@ -30,6 +30,18 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;
   margin: 30px 0 20px 0;
+  animation: 0.3s linear 0.3s 1 both fadeInTop;
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeInRight {

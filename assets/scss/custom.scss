@@ -140,10 +140,54 @@ table {
   border-spacing: 0;
 }
 
+// custom styling
+
 .z-title {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  font-size: 3rem;
 }
 
-@import "~bootstrap/scss/bootstrap.scss";
-@import "~bootstrap-vue/src/index.scss";
+.z-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  color: #8e8e8e;
+  margin: 20px 0 30px 0;
+}
+
+.z-secondary-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 20px 0 20px 0;
+}
+
+.z-intro {
+}
+
+.z-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #8e8e8e;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.z-tertiary-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';

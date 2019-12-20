@@ -9,7 +9,10 @@
     <div class="square-small" />
     <div class="square-large" />
     <div class="copyright">
-      <small>copyright &copy; Alex.AI 2019</small>
+      <small
+        >copyright &copy; Alex.AI 2019. Build with &#127925; using
+        Nuxt.js</small
+      >
     </div>
   </div>
 </template>
@@ -39,8 +42,8 @@ export default {
 .square-large {
   opacity: 0;
   position: absolute;
-  bottom: 50px;
-  right: 40%;
+  bottom: 70px;
+  right: 20%;
   width: 250px;
   height: 250px;
   border: 40px solid #000;

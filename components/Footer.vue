@@ -54,7 +54,7 @@ br {
 }
 
 .z-footer {
-  animation: 1s linear 0.3s both fadeInBottom;
+  animation: 0.3s linear 0.3s both fadeInBottom;
   animation-delay: 0.2s;
 }
 
