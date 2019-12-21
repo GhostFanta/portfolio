@@ -2,6 +2,8 @@
 
 > Portfolio site for Alex AI, build with nuxt.
 
+Visit https://alex-zc.me/ for the on-line site.
+
 ## Build Setup
 
 ``` bash
