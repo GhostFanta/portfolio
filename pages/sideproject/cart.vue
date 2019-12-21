@@ -5,7 +5,7 @@
     <span class="badge badge-success">Vuex</span>
     <span class="badge badge-success">Vue-Router</span>
     <span class="badge badge-info">json-server</span>
-    <h3 class="z-secondary-title"><strong>The cart</strong> is</h3>
+    <h3 class="z-secondary-title">Coming soon...</h3>
   </div>
 </template>
 <script>

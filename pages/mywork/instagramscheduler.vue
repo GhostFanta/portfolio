@@ -10,10 +10,10 @@
         order to attract more potential customers to their sites.
       </p>
       <p class="z-body">
-        For this project, I implement detailed <b>error handling</b> module to
-        provent the client from doing wrong operation. Besides, I adjusted some
-        shared front-end components so the look <b>consistent</b> across
-        different places on the platform.
+        For this project, I improved <b>error handling</b> to provent the client
+        from doing wrong operations. Besides, I adjusted some shared front-end
+        components so the look <b>consistent</b> across different places on the
+        platform...
       </p>
       <img
         :srcset="require(`~/assets/images/scheduler.jpg`).srcSet"
