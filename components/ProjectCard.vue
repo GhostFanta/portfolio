@@ -1,8 +1,8 @@
 <template>
   <div class="z-project-card card">
     <img
-      class="z-project-card-img"
       :srcset="require(`~/assets/images/${img}.jpg`).srcSet"
+      class="z-project-card-img"
     />
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
