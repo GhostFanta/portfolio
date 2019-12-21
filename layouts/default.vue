@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap');
 html {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -42,7 +41,9 @@ html {
   min-height: 40rem;
   height: 100%;
 }
+
 .z-side-panel {
+  margin-left: -5px;
   min-height: 100%;
 }
 </style>

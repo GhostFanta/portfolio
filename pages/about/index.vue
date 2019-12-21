@@ -1,5 +1,5 @@
 <template>
-  <div class="z-about">
+  <div class="z-about container">
     <h1 class="z-title">About</h1>
     <h3 class="z-secondary-title">Professions</h3>
     <p class="z-body">
@@ -178,11 +178,26 @@
           </div>
         </div>
       </div>
+      <div class="col-4">
+        <span class="z-skill-name">CSS/SCSS: </span>
+        <div class="progress">
+          <div
+            class="progress-bar bg-primary"
+            role="progressbar"
+            style="width: 55%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            Intermediate
+          </div>
+        </div>
+      </div>
     </div>
     <h3 class="z-secondary-title">Personal</h3>
     <p class="z-body">
-      When out of work, I prefer hiking, enjoying music(Khalil Fong is the
-      best!) or spending time with some furry friends.
+      When out of work, I prefer hiking &#127939;, enjoying music(Khalil Fong is
+      the best!) or spending time with some furry friends &#128057;.
     </p>
     <Footer />
   </div>

@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -70,4 +77,10 @@ export default {
   styleResources: {
     scss: './assets/scss/*.scss'
   },
+  webfontloader: {
+    families: ['Roboto', 'Lato', 'Montserrat', 'Raleway'],
+    urls: [
+      'https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap'
+    ]
+  }
 }

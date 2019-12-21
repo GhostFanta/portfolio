@@ -2,9 +2,9 @@
   <div class="z-contact">
     <h1 class="z-title">Contact</h1>
     <h3 class="z-subtitle">Something creative in your mind?</h3>
-    <a class="z-invitation" href="">Let's build it together!</a>
+    <h3 class="z-invitation" href="">Let's build it together!</h3>
     <a class="z-contact-email" href="mailto: azc.aizichu@gmail.com"
-      >Mail me @ azc.aizichu@gmail.com</a
+      >Mail me at azc.aizichu@gmail.com</a
     >
     <Footer />
   </div>

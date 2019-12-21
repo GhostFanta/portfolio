@@ -7,7 +7,7 @@
     <div class="container"></div>
     <div class="row">
       <ProjectCard
-        class="col-5 mb-5 mr-2"
+        class="col-md-5 col-lg-5 mb-5 mr-2"
         :title="instagram_scheduler.title"
         :subtitle="instagram_scheduler.subtitle"
         :description="instagram_scheduler.description"
@@ -15,7 +15,7 @@
         :to="instagram_scheduler.to"
       />
       <ProjectCard
-        class="col-5 mb-5"
+        class="col-md-5 col-lg-5 mb-5"
         :title="auth.title"
         :subtitle="auth.subtitle"
         :description="auth.description"

@@ -7,7 +7,7 @@
     </h4>
     <div class="row">
       <ProjectCard
-        class="col-5 mb-5 mr-2"
+        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="cart.title"
         :subtitle="cart.subtitle"
         :description="cart.description"
@@ -15,12 +15,21 @@
         :to="cart.to"
       />
       <ProjectCard
-        class="col-5 mb-5 mr-2"
+        v-if="dashboard.show"
+        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="dashboard.title"
         :subtitle="dashboard.subtitle"
         :description="dashboard.description"
         :img="dashboard.img"
         :to="dashboard.to"
+      />
+      <ProjectCard
+        class="col-md-5 col-lg-5 mb-2 mr-2"
+        :title="portfolio.title"
+        :subtitle="portfolio.subtitle"
+        :description="portfolio.description"
+        :img="portfolio.img"
+        :to="portfolio.to"
       />
     </div>
   </div>
@@ -32,19 +41,31 @@ export default {
     return {
       cart: {
         title: 'The Cart',
-        subtitle: 'Shopping cart ',
+        subtitle:
+          'Shopping cart demo site, which is a good topic to practice web app crafting.',
         description: '',
         repolink: '',
         img: 'cart',
-        to: ''
+        to: '/sideproject/cart',
+        show: true
       },
       dashboard: {
         title: 'The Dashboard',
-        subtitle: 'OAuth Service provider with customer info management.',
+        subtitle: 'Dashboard demo site, which is a good topic to practice',
         description: '',
         repolink: '',
         img: 'dashboard',
-        to: ''
+        to: '/sideproject/dashboard',
+        show: false
+      },
+      portfolio: {
+        title: 'The Portfolio',
+        subtitle: 'This very website that highlights my professions.',
+        description: '',
+        repolink: '',
+        img: 'dashboard',
+        to: '/sideproject/portfolio',
+        show: true
       }
     }
   },
