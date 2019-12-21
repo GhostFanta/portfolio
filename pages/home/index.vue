@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="z-home">
     <h1 class="z-title">Hi, I am Alex AI</h1>
     <div class="z-home-content">
       <p class="z-subtitle">A full stack developer</p>
@@ -26,6 +26,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.z-home {
+  margin-left: 30px;
+}
 .z-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 5rem;

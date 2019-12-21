@@ -9,20 +9,23 @@
         customer success representatives handing user profile information.
       </p>
       <p class="z-body">
-        For this project, I designed and implemented schema and RESTful
-        endpoints for managing customer success representatives. Besides, I
-        implemented celery tasks for clearing out inactive temporary users
+        For this project, I designed and implemented schema, RESTful endpoints
+        and UI for managing customer success representatives. Besides, I
+        implemented celery tasks for clearing out inactive temporary users and
+        social media connection notification emails. I also improved the
+        authentication decorator in each microservice so they can handle
+        response from auth service better...
       </p>
       <img
         :srcset="require(`~/assets/images/oauthlogo.jpg`).srcSet"
-        :width="320"
-        :height="320"
+        :width="270"
+        :height="270"
         class="rounded float-left z-pic-primary"
       />
       <img
         :srcset="require(`~/assets/images/oauthflow.jpg`).srcSet"
-        :width="380"
-        :height="250"
+        :width="340"
+        :height="230"
         class="rounded float-right z-pic-secondary"
       />
     </h5>
@@ -50,8 +53,8 @@ strong {
 
 .z-pic-secondary {
   position: absolute;
-  margin-top: 240px;
-  margin-left: -40px;
+  margin-top: 220px;
+  margin-left: -50px;
   z-index: 0;
 }
 </style>
