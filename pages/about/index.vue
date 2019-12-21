@@ -205,12 +205,12 @@
 <script>
 import Footer from '../../components/Footer'
 export default {
+  components: {
+    Footer
+  },
   fetch({ store }) {
     store.dispatch('SET_SIDEPANEL_BACKGROUND', '#161815')
     store.dispatch('SET_SIDEPANEL_IMAGE', 'rocket')
-  },
-  components: {
-    Footer
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="z-side-panel" :style="{ backgroundColor: color }">
+  <div :style="{ backgroundColor: color }" class="z-side-panel">
     <img
       :srcset="require(`~/assets/images/${image}.jpg`).srcSet"
       class="z-side-panel-img"
@@ -22,7 +22,6 @@ export default {
 .z-side-panel {
   max-width: 30%;
   width: 100%;
-  margin: auto;
   min-height: 50rem;
 }
 .z-side-panel-img {

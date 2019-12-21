@@ -7,29 +7,29 @@
     </h4>
     <div class="row">
       <ProjectCard
-        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="cart.title"
         :subtitle="cart.subtitle"
         :description="cart.description"
         :img="cart.img"
         :to="cart.to"
+        class="col-md-5 col-lg-5 mb-2 mr-2"
       />
       <ProjectCard
         v-if="dashboard.show"
-        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="dashboard.title"
         :subtitle="dashboard.subtitle"
         :description="dashboard.description"
         :img="dashboard.img"
         :to="dashboard.to"
+        class="col-md-5 col-lg-5 mb-2 mr-2"
       />
       <ProjectCard
-        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="portfolio.title"
         :subtitle="portfolio.subtitle"
         :description="portfolio.description"
         :img="portfolio.img"
         :to="portfolio.to"
+        class="col-md-5 col-lg-5 mb-2 mr-2"
       />
     </div>
   </div>
@@ -37,6 +37,9 @@
 <script>
 import ProjectCard from '../../components/ProjectCard'
 export default {
+  components: {
+    ProjectCard
+  },
   data() {
     return {
       cart: {
@@ -68,9 +71,6 @@ export default {
         show: true
       }
     }
-  },
-  components: {
-    ProjectCard
   }
 }
 </script>
