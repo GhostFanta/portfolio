@@ -36,7 +36,7 @@ export default {}
 </script>
 <style lang="scss" scoped>
 br {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 10px solid rgba(0, 0, 0, 0.1);

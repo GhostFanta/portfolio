@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 30px 0 100px 0;
+  margin: 30px 0 80px 0;
   box-sizing: border-box;
   animation: appear 0.5s linear forwards;
   z-index: 5;

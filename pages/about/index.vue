@@ -215,7 +215,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.z-bar {
+.z-body {
+  font-size: 1rem;
 }
 
 .z-about {
@@ -223,11 +224,11 @@ export default {
 }
 
 .z-subtitle-professions {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 .z-subtitle-personal {
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 @keyframes fadeInBottom {

@@ -23,7 +23,7 @@ export default {
   max-width: 30%;
   width: 100%;
   margin: auto;
-  min-height: 40rem;
+  min-height: 50rem;
 }
 .z-side-panel-img {
   width: 100%;

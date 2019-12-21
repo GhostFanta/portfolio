@@ -1,7 +1,7 @@
 <template>
   <div class="z-layout">
     <div class="row">
-      <SidePanel class="z-side-panel col-4 h-100" />
+      <SidePanel class="z-side-panel col-4 " />
       <Container class="col-8 z-container">
         <nuxt />
       </Container>
@@ -43,7 +43,7 @@ html {
 }
 
 .z-side-panel {
-  margin-left: -5px;
+  margin: -5px 20px -10px 0;
   min-height: 100%;
 }
 </style>

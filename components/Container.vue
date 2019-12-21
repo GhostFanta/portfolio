@@ -67,7 +67,7 @@ export default {
 
 .copyright {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   font-size: large;
 }
 
