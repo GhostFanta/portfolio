@@ -3,9 +3,9 @@
     <h1 class="z-title">About</h1>
     <h3 class="z-secondary-title">Professions</h3>
     <p class="z-body">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-      doloribus eos eveniet fugiat laborum laudantium minus nemo neque odit quod
-      sunt suscipit? Aliquid assumenda eos est ipsa magni nisi sit!
+      I am a software developer with experiences working on several SaaS
+      products including both front-end & bach-end stuffs, especially focused on
+      building attractive UI stuffs and secured, easy-to-use RESTful API.
     </p>
     <h3 class="z-secondary-title">Skill Set</h3>
     <h4 class="z-tertiary-title">Framework</h4>
