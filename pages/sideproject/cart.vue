@@ -4,8 +4,29 @@
     <span class="badge badge-success">Vue.js</span>
     <span class="badge badge-success">Vuex</span>
     <span class="badge badge-success">Vue-Router</span>
+    <span class="badge badge-success">VeeValidate</span>
     <span class="badge badge-info">json-server</span>
-    <h3 class="z-secondary-title">Coming soon...</h3>
+    <h5 class="z-subtitle z-intro">
+      Shopping cart is an excellent entry point for practicing shared features
+      required by most of the web applications nowadays.
+    </h5>
+    <a href="https://shop-zc.netlify.com/">Visit the demo</a>
+    <p>
+      You can checkout the source code on
+      <a href="https://github.com/GhostFanta/shop.vue.bootstrap">Github</a>
+    </p>
+    <img
+      :srcset="require(`~/assets/images/shop_market.jpg`).srcSet"
+      :width="430"
+      :height="230"
+      class="rounded float-left z-pic-primary"
+    />
+    <img
+      :srcset="require(`~/assets/images/shop_home.jpg`).srcSet"
+      :width="340"
+      :height="230"
+      class="rounded float-right z-pic-secondary"
+    />
   </div>
 </template>
 <script>
@@ -14,5 +35,17 @@ export default {}
 <style lang="scss" scoped>
 .z-cart {
   animation: 0.2s linear 0.3s both fadeInBottom;
+}
+.z-pic-primary {
+  z-index: -1;
+  border: 2px solid black;
+}
+
+.z-pic-secondary {
+  border: 2px solid black;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -120px;
+  z-index: 0;
 }
 </style>
