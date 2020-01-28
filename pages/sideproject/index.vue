@@ -12,6 +12,7 @@
         :description="cart.description"
         :img="cart.img"
         :to="cart.to"
+        :badges="cart.badges"
         class="col-md-5 col-lg-5 mb-2 mr-2"
       />
       <ProjectCard
@@ -21,6 +22,7 @@
         :description="dashboard.description"
         :img="dashboard.img"
         :to="dashboard.to"
+        :badges="dashboard.badges"
         class="col-md-5 col-lg-5 mb-2 mr-2"
       />
       <ProjectCard
@@ -29,6 +31,7 @@
         :description="portfolio.description"
         :img="portfolio.img"
         :to="portfolio.to"
+        :badges="portfolio.badges"
         class="col-md-5 col-lg-5 mb-2 mr-2"
       />
     </div>
@@ -50,24 +53,43 @@ export default {
         repolink: '',
         img: 'cart',
         to: '/sideproject/cart',
+        badges: [
+          {
+            title: 'Vue Stack',
+            type: 'success'
+          }
+        ],
         show: true
       },
       dashboard: {
         title: 'The Dashboard',
-        subtitle: 'Dashboard demo site, which is a good topic to practice',
+        subtitle:
+          'Dashboard demo site, which integrates multiple section serving different proposes.',
         description: '',
         repolink: '',
         img: 'dashboard',
         to: '/sideproject/dashboard',
-        show: false
+        badges: [
+          {
+            title: 'React Stack',
+            type: 'info'
+          }
+        ],
+        show: true
       },
       portfolio: {
         title: 'The Portfolio',
         subtitle: 'This very website that highlights my professions.',
         description: '',
         repolink: '',
-        img: 'dashboard',
+        img: 'portfolio',
         to: '/sideproject/portfolio',
+        badges: [
+          {
+            title: 'Nuxt',
+            type: 'success'
+          }
+        ],
         show: true
       }
     }

@@ -5,12 +5,24 @@
       class="z-project-card-img"
     />
     <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{ subtitle }}</h6>
+      <h6>{{ title }}</h6>
+      <div class="mb-2">
+        <span
+          v-for="item in badges"
+          :class="{
+            'badge-success': item.type === 'success',
+            'badge-info': item.type === 'info'
+          }"
+          class="badge"
+          >{{ item.title }}</span
+        >
+      </div>
+      <small class="card-subtitle mb-3 text-muted">{{ subtitle }}</small>
+      <br />
       <a v-if="repolink" href="">{{ repolink }}</a>
-      <p class="card-text">
+      <small class="card-text">
         {{ description }}
-      </p>
+      </small>
       <nuxt-link :to="to" class="card-link">View Detail</nuxt-link>
     </div>
   </div>
@@ -23,7 +35,8 @@ export default {
     description: { type: String, default: '' },
     img: { type: String, default: '404' },
     repolink: { type: String, default: '' },
-    to: { type: String, default: 'home' }
+    to: { type: String, default: 'home' },
+    badges: { type: Array, default: () => [] }
   }
 }
 </script>
@@ -36,7 +49,11 @@ export default {
   margin: 10px 0 0 0;
   width: 100%;
   height: auto;
-  max-width: 480px;
+  max-width: 430px;
   max-height: 200px;
+}
+
+.card-link {
+  font-size: small;
 }
 </style>
