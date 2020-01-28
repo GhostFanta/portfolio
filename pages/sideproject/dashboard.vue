@@ -16,6 +16,9 @@
       >Visit the demo (still under development)</a
     >
     <p>
+      Use <strong>test@alex.me </strong>and <strong>123456</strong> to access.
+    </p>
+    <p>
       You can checkout the source code on
       <a href="https://github.com/GhostFanta/dashboard.react.zc">Github</a>
     </p>
