@@ -5,7 +5,7 @@
       I believe practice makes perfect. Crafting side projects is an effecitive
       way to advance my skills.
     </h4>
-    <div class="row">
+    <div class="z-side-project-content d-flex">
       <ProjectCard
         :title="cart.title"
         :subtitle="cart.subtitle"
@@ -13,7 +13,7 @@
         :img="cart.img"
         :to="cart.to"
         :badges="cart.badges"
-        class="col-md-5 col-lg-5 mb-2 mr-2"
+        class=" mb-2 mr-2"
       />
       <ProjectCard
         v-if="dashboard.show"
@@ -23,7 +23,7 @@
         :img="dashboard.img"
         :to="dashboard.to"
         :badges="dashboard.badges"
-        class="col-md-5 col-lg-5 mb-2 mr-2"
+        class="mb-2 mr-2"
       />
       <ProjectCard
         :title="portfolio.title"
@@ -32,7 +32,7 @@
         :img="portfolio.img"
         :to="portfolio.to"
         :badges="portfolio.badges"
-        class="col-md-5 col-lg-5 mb-2 mr-2"
+        class="mb-2 mr-2"
       />
     </div>
   </div>
@@ -99,6 +99,10 @@ export default {
 <style lang="scss" scoped>
 .z-side-project {
   animation: 0.2s linear 0.3s both fadeInBottom;
+}
+
+.z-side-project-content {
+  flex-wrap: wrap;
 }
 
 @keyframes fadeInBottom {

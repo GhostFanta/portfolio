@@ -12,7 +12,7 @@
         :description="instagram_scheduler.description"
         :img="instagram_scheduler.img"
         :to="instagram_scheduler.to"
-        class="col-md-5 col-lg-5 mb-5 mr-2"
+        class="mb-5 mr-2"
       />
       <ProjectCard
         :title="auth.title"
@@ -20,7 +20,7 @@
         :description="auth.description"
         :img="auth.img"
         :to="auth.to"
-        class="col-md-5 col-lg-5 mb-5"
+        class="mb-5"
       />
     </div>
   </div>
