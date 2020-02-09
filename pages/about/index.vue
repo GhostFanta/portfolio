@@ -207,11 +207,11 @@ import Footer from '../../components/Footer'
 export default {
   components: {
     Footer
-  },
-  fetch({ store }) {
-    store.dispatch('SET_SIDEPANEL_BACKGROUND', '#161815')
-    store.dispatch('SET_SIDEPANEL_IMAGE', 'rocket')
   }
+  // fetch({ store }) {
+  //   store.dispatch('SET_SIDEPANEL_BACKGROUND', '#161815')
+  //   store.dispatch('SET_SIDEPANEL_IMAGE', 'rocket')
+  // }
 }
 </script>
 <style lang="scss" scoped>

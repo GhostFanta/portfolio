@@ -1,7 +1,7 @@
 <template>
   <div class="z-layout">
     <div class="row">
-      <SidePanel class="z-side-panel col-4 " />
+      <SidePanel class="z-side-panel col-4" />
       <Container class="col-8 z-container">
         <nuxt />
       </Container>
