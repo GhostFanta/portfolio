@@ -46,9 +46,9 @@ export default {
   data() {
     return {
       cart: {
-        title: 'The Cart',
+        title: 'Vue the Cart',
         subtitle:
-          'Shopping cart demo site, which is a good topic to practice web app crafting.',
+          'Shopping cart demo site based on Flask API and Vue UI. Managed with docker.',
         description: '',
         repolink: '',
         img: 'cart',
@@ -62,7 +62,7 @@ export default {
         show: true
       },
       dashboard: {
-        title: 'The Dashboard',
+        title: 'React the Dashboard',
         subtitle:
           'Dashboard demo site, which integrates multiple section serving different proposes.',
         description: '',
@@ -78,8 +78,9 @@ export default {
         show: true
       },
       portfolio: {
-        title: 'The Portfolio',
-        subtitle: 'This very website that highlights my professions.',
+        title: 'Nuxt the Portfolio',
+        subtitle:
+          'This very website that highlights my professions. Developed with SEO friendly Nuxt.js.',
         description: '',
         repolink: '',
         img: 'portfolio',

@@ -6,11 +6,17 @@
     <span class="badge badge-success">Vue-Router</span>
     <span class="badge badge-success">VeeValidate</span>
     <span class="badge badge-info">json-server</span>
+    <span class="badge badge-dark">Flask</span>
+    <span class="badge badge-primary">Docker</span>
+    <span class="badge badge-info">Mysql</span>
     <h5 class="z-subtitle z-intro">
       Shopping cart is an excellent entry point for practicing shared features
-      required by most of the web applications nowadays.
+      required by most of the web applications nowadays. This project is based
+      on Vue and Flask, served with docker and nginx.
     </h5>
     <a href="https://shop-zc.netlify.com/">Visit the demo</a>
+    <br />
+    <a href="http://159.203.17.226:81/docs/">Check out the API Guide</a>
     <p>
       You can checkout the source code on
       <a href="https://github.com/GhostFanta/shop.vue.bootstrap">Github</a>
