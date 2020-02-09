@@ -5,17 +5,19 @@
         :srcset="require(`~/assets/images/${img}.jpg`).srcSet"
         class="img-fluid"
       />
-      <div class="card-content">
+      <div class="card-content d-flex flex-column">
         <div
           class="d-flex flex-column justify-content-center align-items-left p-2"
         >
           <h4>{{ title }}</h4>
           <small>{{ subtitle }}</small>
+          <small class="card-text mb-1">
+            {{ description }}
+          </small>
+          <nuxt-link :to="to" class="btn btn-block btn-bottom"
+            >View Detail</nuxt-link
+          >
         </div>
-        <small class="card-text mb-5">
-          {{ description }}
-        </small>
-        <nuxt-link :to="to" class="btn btn-block">View Detail</nuxt-link>
       </div>
     </div>
   </div>
@@ -57,6 +59,15 @@ $h-color: #9cc9e3;
 
   .btn {
     border-radius: 0;
+  }
+
+  .card-content {
+    .btn-bottom {
+      margin-bottom: auto;
+      margin-top: auto !important;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 </style>
