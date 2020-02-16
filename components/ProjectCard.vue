@@ -9,7 +9,7 @@
         <div
           class="d-flex flex-column justify-content-center align-items-left p-2"
         >
-          <h4>{{ title }}</h4>
+          <h5>{{ title }}</h5>
           <small>{{ subtitle }}</small>
           <small class="card-text mb-1">
             {{ description }}
@@ -38,7 +38,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 $card-width: 260px;
-$card-height: 300px;
+$card-height: 310px;
 $h-color: #9cc9e3;
 
 .card {
