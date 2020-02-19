@@ -9,6 +9,7 @@
     <span class="badge badge-dark">Flask</span>
     <span class="badge badge-primary">Docker</span>
     <span class="badge badge-info">Mysql</span>
+    <span class="badge badge-success">Nginx</span>
     <h5 class="z-subtitle z-intro">
       Shopping cart is an excellent entry point for practicing shared features
       required by most of the web applications nowadays. This project is based
