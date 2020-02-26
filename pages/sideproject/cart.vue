@@ -10,18 +10,25 @@
     <span class="badge badge-primary">Docker</span>
     <span class="badge badge-info">Mysql</span>
     <span class="badge badge-success">Nginx</span>
-    <h5 class="z-subtitle z-intro">
+    <h6 class="z-subtitle z-intro">
       Shopping cart is an excellent entry point for practicing shared features
       required by most of the web applications nowadays. This project is based
       on Vue and Flask, served with docker and nginx.
-    </h5>
+    </h6>
     <a href="https://shop-zc.netlify.com/"
       >Visit the demo(still under development)</a
     >
     <p>
       Use <strong>test@alex.me </strong>and <strong>123456</strong> to access.
     </p>
+    <small>
+      Ps: A good workaround on resolving https api communication for netlify is
+      under process, if you cannot load the mock data, please visit
+      https://159.203.17.226/featuredProducts from your browser and visit the
+      link directly, then you will see the mock data.
+    </small>
     <br />
+    <p></p>
     <a href="http://159.203.17.226:81/docs/">Check out the API Guide</a>
     <p>
       You can checkout the source code on
