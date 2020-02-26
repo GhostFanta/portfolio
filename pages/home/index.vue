@@ -10,7 +10,23 @@
         create amazing stuffs.
       </p>
     </div>
+
     <Footer />
+    <div class="float-right">
+      <small>Quick Access</small>
+      <ul>
+        <li>
+          <nuxt-link to="/sideproject/dashboard"
+            ><small>Dashboard</small></nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/sideproject/identity_express"
+            ><small>Identity Express</small></nuxt-link
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -18,10 +34,6 @@ import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Footer
-  },
-  fetch({ store }) {
-    store.dispatch('SET_SIDEPANEL_BACKGROUND', '#161815')
-    store.dispatch('SET_SIDEPANEL_IMAGE', 'rocket')
   }
 }
 </script>
