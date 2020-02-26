@@ -21,9 +21,6 @@
     <p>
       Use <strong>test@alex.me </strong>and <strong>123456</strong> to access.
     </p>
-    <p>
-      Use
-    </p>
     <br />
     <a href="http://159.203.17.226:81/docs/">Check out the API Guide</a>
     <p>

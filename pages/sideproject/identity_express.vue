@@ -7,12 +7,9 @@
     <span class="badge badge-primary">postgres</span>
     <span class="badge badge-info">Docker</span>
     <h5 class="z-subtitle z-intro">
-      Want to develop a basic oauth provider to feed other services. これだけ
-      -_-|||
+      Want to develop a basic oauth provider to feed other services.
     </h5>
-    <a href="https://flamboyant-swartz-5bcde4.netlify.com/login"
-      >Checkout the API guide.</a
-    >
+    <a href="#"><del>Checkout the API guide.</del></a>
     <p>
       You can checkout the source code on
       <a href="https://github.com/GhostFanta/identity_express">Github</a>
