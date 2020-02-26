@@ -21,7 +21,7 @@
     <p>
       Use <strong>test@alex.me </strong>and <strong>123456</strong> to access.
     </p>
-    <small>
+    <small class="text-danger">
       Ps: A good workaround on resolving https api communication for netlify is
       under process, if you cannot load the mock data, please visit
       https://159.203.17.226/featuredProducts from your browser and visit the
