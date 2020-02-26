@@ -27,7 +27,7 @@ export default {
 .z-side-panel-img {
   width: 100%;
   max-width: 500px;
-  max-height: 1200px;
+  max-height: 100vh;
   margin: auto;
 }
 </style>

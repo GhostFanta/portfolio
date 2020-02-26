@@ -38,12 +38,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 $card-width: 260px;
-$card-height: 310px;
+$card-height: 300px;
 $h-color: #9cc9e3;
 
 .card {
   border: none;
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   background: transparent;
   box-shadow: 2px 2px 10px 0px rgba(46, 61, 73, 0.2);
