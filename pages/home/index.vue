@@ -12,21 +12,6 @@
     </div>
 
     <Footer />
-    <div class="float-right">
-      <small>Quick Access</small>
-      <ul>
-        <li>
-          <nuxt-link to="/sideproject/dashboard"
-            ><small>Dashboard</small></nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/sideproject/identity_express"
-            ><small>Identity Express</small></nuxt-link
-          >
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 <script>
