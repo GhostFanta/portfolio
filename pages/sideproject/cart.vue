@@ -15,7 +15,7 @@
       required by most of the web applications nowadays. This project is based
       on Vue and Flask, served with docker and nginx.
     </h6>
-    <a href="https://shop-zc.netlify.com/"
+    <a href="http://159.203.17.226"
       >Visit the demo(still under development)</a
     >
     <p>
