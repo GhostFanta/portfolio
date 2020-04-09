@@ -13,7 +13,7 @@
       profile management, products management and so on.
     </h5>
     <a href="https://flamboyant-swartz-5bcde4.netlify.com/login"
-      >Visit the demo (still under development)</a
+      >Visit the demo (archived at this moment)</a
     >
     <p>
       Use <strong>test@alex.me </strong>and <strong>123456</strong> to access.
