@@ -7,6 +7,16 @@
     </h4>
     <div class="z-side-project-content d-flex">
       <ProjectCard
+        v-if="breeder.show"
+        :title="breeder.title"
+        :subtitle="breeder.subtitle"
+        :description="breeder.description"
+        :img="breeder.img"
+        :to="breeder.to"
+        :badges="breeder.badges"
+        class="mb-2 mr-2"
+      />
+      <ProjectCard
         :title="cart.title"
         :subtitle="cart.subtitle"
         :description="cart.description"
@@ -16,6 +26,15 @@
         class=" mb-2 mr-2"
       />
       <ProjectCard
+        :title="portfolio.title"
+        :subtitle="portfolio.subtitle"
+        :description="portfolio.description"
+        :img="portfolio.img"
+        :to="portfolio.to"
+        :badges="portfolio.badges"
+        class="mb-2 mr-2"
+      />
+      <ProjectCard
         v-if="dashboard.show"
         :title="dashboard.title"
         :subtitle="dashboard.subtitle"
@@ -23,15 +42,6 @@
         :img="dashboard.img"
         :to="dashboard.to"
         :badges="dashboard.badges"
-        class="mb-2 mr-2"
-      />
-      <ProjectCard
-        :title="portfolio.title"
-        :subtitle="portfolio.subtitle"
-        :description="portfolio.description"
-        :img="portfolio.img"
-        :to="portfolio.to"
-        :badges="portfolio.badges"
         class="mb-2 mr-2"
       />
     </div>
@@ -62,9 +72,9 @@ export default {
         show: true
       },
       dashboard: {
-        title: 'React the Dashboard',
+        title: 'Dashboard(Archived)',
         subtitle:
-          'Dashboard demo site, which integrates multiple section serving different proposes.',
+          'React Dashboard demo site, which integrates multiple section serving different proposes.',
         description: '',
         repolink: '',
         img: 'dashboard',
@@ -92,6 +102,22 @@ export default {
           }
         ],
         show: true
+      },
+      breeder: {
+        title: 'React the Breeder',
+        subtitle:
+          'A breeder info board build with react and redux integrated with 3rd party API with improvement on redux structure',
+        description: '',
+        repolink: '',
+        img: 'breeder',
+        to: '/sideproject/breeder',
+        badges: [
+          {
+            title: 'Nuxt',
+            type: 'success'
+          }
+        ],
+        show: true
       }
     }
   }
@@ -104,6 +130,8 @@ export default {
 
 .z-side-project-content {
   flex-wrap: wrap;
+  overflow: auto;
+  height: 100%;
 }
 
 @keyframes fadeInBottom {
