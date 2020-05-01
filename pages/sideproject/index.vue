@@ -132,6 +132,10 @@ export default {
   flex-wrap: wrap;
   overflow: auto;
   height: 100%;
+
+  @media (min-width: 576px) {
+    padding: 30px;
+  }
 }
 
 @keyframes fadeInBottom {

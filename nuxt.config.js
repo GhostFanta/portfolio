@@ -34,7 +34,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
+
   /*
    ** Nuxt.js dev-modules
    */
@@ -50,7 +51,8 @@ export default {
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
     'nuxt-responsive-loader',
-    '@nuxtjs/svg-sprite'
+    '@nuxtjs/svg-sprite',
+    'nuxt-mq'
   ],
   /*
    ** Axios module configuration
@@ -75,12 +77,27 @@ export default {
     bootstrapVueCSS: false
   },
   styleResources: {
-    scss: './assets/scss/*.scss'
+    scss: [
+      'bootstrap/scss/_functions.scss',
+      'bootstrap/scss/_variables.scss',
+      'bootstrap/scss/_mixins.scss',
+      'bootstrap-vue/src/_variables.scss',
+      './assets/scss/*.scss'
+    ]
   },
   webfontloader: {
     families: ['Roboto', 'Lato', 'Montserrat', 'Raleway'],
     urls: [
       'https://fonts.googleapis.com/css?family=Lato|Montserrat|Raleway|Roboto&display=swap'
     ]
+  },
+  mq: {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200
+    }
   }
 }
