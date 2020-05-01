@@ -10,7 +10,6 @@
         create amazing stuffs.
       </p>
     </div>
-
     <Footer />
   </div>
 </template>
@@ -31,7 +30,11 @@ export default {
   font-size: 5rem;
   margin: 30px 0 20px 0;
   animation: 0.3s linear 0.3s 1 both fadeInTop;
+  @media (max-width: 576px) {
+    font-size: 3rem;
+  }
 }
+
 @keyframes fadeInTop {
   0% {
     opacity: 0;
@@ -73,6 +76,7 @@ export default {
   text-justify: inter-word;
   padding: 10px 5px 10px 5px;
   max-width: 90%;
+  word-break: break-all;
 }
 
 strong {

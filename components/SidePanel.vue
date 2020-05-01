@@ -23,6 +23,9 @@ export default {
   max-width: 30%;
   width: 100%;
   min-height: 50rem;
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
 }
 .z-side-panel-img {
   width: 100%;

@@ -4,24 +4,25 @@
     <h4 class="z-subtitle">
       Below are some of previous works that I took an active part in.
     </h4>
-    <div class="container"></div>
-    <div class="row">
-      <ProjectCard
-        :title="instagram_scheduler.title"
-        :subtitle="instagram_scheduler.subtitle"
-        :description="instagram_scheduler.description"
-        :img="instagram_scheduler.img"
-        :to="instagram_scheduler.to"
-        class="mb-5 mr-2"
-      />
-      <ProjectCard
-        :title="auth.title"
-        :subtitle="auth.subtitle"
-        :description="auth.description"
-        :img="auth.img"
-        :to="auth.to"
-        class="mb-5"
-      />
+    <div class="container">
+      <div class="row">
+        <ProjectCard
+          :title="instagram_scheduler.title"
+          :subtitle="instagram_scheduler.subtitle"
+          :description="instagram_scheduler.description"
+          :img="instagram_scheduler.img"
+          :to="instagram_scheduler.to"
+          class="mb-5 mr-2"
+        />
+        <ProjectCard
+          :title="auth.title"
+          :subtitle="auth.subtitle"
+          :description="auth.description"
+          :img="auth.img"
+          :to="auth.to"
+          class="mb-5"
+        />
+      </div>
     </div>
   </div>
 </template>
