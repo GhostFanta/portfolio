@@ -9,12 +9,6 @@
         <strong>Javascript & Python</strong>, located in Toronto Area. Eager to
         create amazing stuffs.
       </p>
-      <p class="z-content">
-        <small
-          >Blog address:
-          <a href="https://demo-zc.com/">https://demo-zc.com/</a></small
-        >
-      </p>
     </div>
     <Footer />
   </div>
