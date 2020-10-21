@@ -1,20 +1,28 @@
 <template>
-  <div class="z-project-card card">
-    <img
-      class="z-project-card-img"
-      :srcset="require(`~/assets/images/${img}.jpg`).srcSet"
-    />
-    <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{ subtitle }}</h6>
-      <a v-if="repolink" href="">{{ repolink }}</a>
-      <p class="card-text">
-        {{ description }}
-      </p>
-      <nuxt-link :to="to" class="card-link">View Detail</nuxt-link>
+  <div>
+    <div class="card">
+      <img
+        :srcset="require(`~/assets/images/${img}.jpg`).srcSet"
+        class="img-fluid"
+      />
+      <div class="card-content d-flex flex-column">
+        <div
+          class="d-flex flex-column justify-content-center align-items-left p-2"
+        >
+          <h5>{{ title }}</h5>
+          <small>{{ subtitle }}</small>
+          <small class="card-text mb-1">
+            {{ description }}
+          </small>
+          <nuxt-link :to="to" class="btn btn-block btn-bottom"
+            >View Detail</nuxt-link
+          >
+        </div>
+      </div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   props: {
@@ -23,20 +31,43 @@ export default {
     description: { type: String, default: '' },
     img: { type: String, default: '404' },
     repolink: { type: String, default: '' },
-    to: { type: String, default: 'home' }
+    to: { type: String, default: 'home' },
+    badges: { type: Array, default: () => [] }
   }
 }
 </script>
 <style lang="scss" scoped>
-.z-project-card {
-  background: transparent;
-}
+$card-width: 260px;
+$card-height: 300px;
+$h-color: #9cc9e3;
 
-.z-project-card-img {
-  margin: 10px 0 0 0;
-  width: 100%;
-  height: auto;
-  max-width: 480px;
-  max-height: 200px;
+.card {
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  background: transparent;
+  box-shadow: 2px 2px 10px 0px rgba(46, 61, 73, 0.2);
+  height: $card-height;
+  width: $card-width;
+  word-break: break-word;
+  .card-title-wrapper {
+    display: flex;
+  }
+  &:hover {
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  }
+
+  .btn {
+    border-radius: 0;
+  }
+
+  .card-content {
+    .btn-bottom {
+      margin-bottom: auto;
+      margin-top: auto !important;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
 </style>

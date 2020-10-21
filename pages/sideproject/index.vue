@@ -5,31 +5,44 @@
       I believe practice makes perfect. Crafting side projects is an effecitive
       way to advance my skills.
     </h4>
-    <div class="row">
+    <div class="z-side-project-content d-flex">
       <ProjectCard
-        class="col-md-5 col-lg-5 mb-2 mr-2"
+        v-if="breeder.show"
+        :title="breeder.title"
+        :subtitle="breeder.subtitle"
+        :description="breeder.description"
+        :img="breeder.img"
+        :to="breeder.to"
+        :badges="breeder.badges"
+        class="mb-2 mr-2"
+      />
+      <ProjectCard
         :title="cart.title"
         :subtitle="cart.subtitle"
         :description="cart.description"
         :img="cart.img"
         :to="cart.to"
+        :badges="cart.badges"
+        class=" mb-2 mr-2"
       />
       <ProjectCard
-        v-if="dashboard.show"
-        class="col-md-5 col-lg-5 mb-2 mr-2"
-        :title="dashboard.title"
-        :subtitle="dashboard.subtitle"
-        :description="dashboard.description"
-        :img="dashboard.img"
-        :to="dashboard.to"
-      />
-      <ProjectCard
-        class="col-md-5 col-lg-5 mb-2 mr-2"
         :title="portfolio.title"
         :subtitle="portfolio.subtitle"
         :description="portfolio.description"
         :img="portfolio.img"
         :to="portfolio.to"
+        :badges="portfolio.badges"
+        class="mb-2 mr-2"
+      />
+      <ProjectCard
+        v-if="dashboard.show"
+        :title="dashboard.title"
+        :subtitle="dashboard.subtitle"
+        :description="dashboard.description"
+        :img="dashboard.img"
+        :to="dashboard.to"
+        :badges="dashboard.badges"
+        class="mb-2 mr-2"
       />
     </div>
   </div>
@@ -37,46 +50,92 @@
 <script>
 import ProjectCard from '../../components/ProjectCard'
 export default {
+  components: {
+    ProjectCard
+  },
   data() {
     return {
       cart: {
-        title: 'The Cart',
+        title: 'Vue the Cart',
         subtitle:
-          'Shopping cart demo site, which is a good topic to practice web app crafting.',
+          'Shopping cart demo site based on Flask API and Vue UI. Managed with docker.',
         description: '',
         repolink: '',
         img: 'cart',
         to: '/sideproject/cart',
+        badges: [
+          {
+            title: 'Vue Stack',
+            type: 'success'
+          }
+        ],
         show: true
       },
       dashboard: {
-        title: 'The Dashboard',
-        subtitle: 'Dashboard demo site, which is a good topic to practice',
+        title: 'Dashboard(Archived)',
+        subtitle:
+          'React Dashboard demo site, which integrates multiple section serving different proposes.',
         description: '',
         repolink: '',
         img: 'dashboard',
         to: '/sideproject/dashboard',
-        show: false
+        badges: [
+          {
+            title: 'React Stack',
+            type: 'info'
+          }
+        ],
+        show: true
       },
       portfolio: {
-        title: 'The Portfolio',
-        subtitle: 'This very website that highlights my professions.',
+        title: 'Nuxt the Portfolio',
+        subtitle:
+          'This very website that highlights my professions. Developed with SEO friendly Nuxt.js.',
         description: '',
         repolink: '',
-        img: 'dashboard',
+        img: 'portfolio',
         to: '/sideproject/portfolio',
+        badges: [
+          {
+            title: 'Nuxt',
+            type: 'success'
+          }
+        ],
+        show: true
+      },
+      breeder: {
+        title: 'React the Breeder',
+        subtitle:
+          'A breeder info board build with react and redux integrated with 3rd party API with improvement on redux structure',
+        description: '',
+        repolink: '',
+        img: 'breeder',
+        to: '/sideproject/breeder',
+        badges: [
+          {
+            title: 'Nuxt',
+            type: 'success'
+          }
+        ],
         show: true
       }
     }
-  },
-  components: {
-    ProjectCard
   }
 }
 </script>
 <style lang="scss" scoped>
 .z-side-project {
   animation: 0.2s linear 0.3s both fadeInBottom;
+}
+
+.z-side-project-content {
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 100%;
+
+  @media (min-width: 576px) {
+    padding: 30px;
+  }
 }
 
 @keyframes fadeInBottom {

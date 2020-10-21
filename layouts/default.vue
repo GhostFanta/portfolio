@@ -1,8 +1,13 @@
 <template>
   <div class="z-layout">
-    <div class="row">
-      <SidePanel class="z-side-panel col-4 " />
+    <div v-if="$mq !== 'sm'" class="row">
+      <SidePanel class="z-side-panel col-4" />
       <Container class="col-8 z-container">
+        <nuxt />
+      </Container>
+    </div>
+    <div v-else>
+      <Container class="z-container">
         <nuxt />
       </Container>
     </div>
