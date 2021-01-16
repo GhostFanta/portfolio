@@ -7,9 +7,9 @@
       <li>
         <nuxt-link class="z-nav-item" to="/about">About</nuxt-link>
       </li>
-      <li>
-        <nuxt-link class="z-nav-item" to="/mywork">My Work</nuxt-link>
-      </li>
+      <!--      <li>-->
+      <!--        <nuxt-link class="z-nav-item" to="/mywork">My Work</nuxt-link>-->
+      <!--      </li>-->
       <li>
         <nuxt-link class="z-nav-item" to="/sideproject">Side Project</nuxt-link>
       </li>

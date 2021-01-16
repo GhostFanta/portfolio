@@ -16,15 +16,15 @@
         :badges="breeder.badges"
         class="mb-2 mr-2"
       />
-      <ProjectCard
-        :title="cart.title"
-        :subtitle="cart.subtitle"
-        :description="cart.description"
-        :img="cart.img"
-        :to="cart.to"
-        :badges="cart.badges"
-        class=" mb-2 mr-2"
-      />
+      <!--      <ProjectCard-->
+      <!--        :title="cart.title"-->
+      <!--        :subtitle="cart.subtitle"-->
+      <!--        :description="cart.description"-->
+      <!--        :img="cart.img"-->
+      <!--        :to="cart.to"-->
+      <!--        :badges="cart.badges"-->
+      <!--        class=" mb-2 mr-2"-->
+      <!--      />-->
       <ProjectCard
         :title="portfolio.title"
         :subtitle="portfolio.subtitle"
@@ -34,16 +34,16 @@
         :badges="portfolio.badges"
         class="mb-2 mr-2"
       />
-      <ProjectCard
-        v-if="dashboard.show"
-        :title="dashboard.title"
-        :subtitle="dashboard.subtitle"
-        :description="dashboard.description"
-        :img="dashboard.img"
-        :to="dashboard.to"
-        :badges="dashboard.badges"
-        class="mb-2 mr-2"
-      />
+      <!--      <ProjectCard-->
+      <!--        v-if="dashboard.show"-->
+      <!--        :title="dashboard.title"-->
+      <!--        :subtitle="dashboard.subtitle"-->
+      <!--        :description="dashboard.description"-->
+      <!--        :img="dashboard.img"-->
+      <!--        :to="dashboard.to"-->
+      <!--        :badges="dashboard.badges"-->
+      <!--        class="mb-2 mr-2"-->
+      <!--      />-->
     </div>
   </div>
 </template>
