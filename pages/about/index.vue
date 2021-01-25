@@ -71,17 +71,17 @@
         </div>
       </div>
       <div class="col-4">
-        <span class="z-skill-name">Express: </span>
+        <span class="z-skill-name">Node.js: </span>
         <div class="progress">
           <div
-            class="progress-bar bg-warning"
+            class="progress-bar bg-blue"
             role="progressbar"
-            style="width: 25%"
-            aria-valuenow="25"
+            style="width: 75%"
+            aria-valuenow="75"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            Beginner
+            Intermediate
           </div>
         </div>
       </div>
