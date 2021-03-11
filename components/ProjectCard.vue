@@ -3,7 +3,7 @@
     <div class="card">
       <img
         :srcset="require(`~/assets/images/${img}.jpg`).srcSet"
-        class="img-fluid"
+        class="img-fluid rounded"
       />
       <div class="card-content d-flex flex-column">
         <div
@@ -40,21 +40,28 @@ export default {
 $card-width: 260px;
 $card-height: 300px;
 $h-color: #9cc9e3;
-
+$shadow-color: rgba(2, 137, 255, 0.2);
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 .card {
   border: none;
   margin: 5px;
+  border-radius: 1rem;
   padding: 10px;
-  background: transparent;
-  box-shadow: 2px 2px 10px 0px rgba(46, 61, 73, 0.2);
+  background: white;
+  -webkit-box-shadow: 10px 10px 42px -10px $shadow-color;
+  -moz-box-shadow: 10px 10px 42px -10px $shadow-color;
+  box-shadow: 10px 10px 42px -10px $shadow-color;
   height: $card-height;
   width: $card-width;
   word-break: break-word;
+  transition: box-shadow 0.3s ease-in-out;
   .card-title-wrapper {
     display: flex;
   }
   &:hover {
-    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    box-shadow: 5px 5px 25px 0px shade($shadow-color, 20%);
   }
 
   .btn {
@@ -69,5 +76,9 @@ $h-color: #9cc9e3;
       align-items: center;
     }
   }
+}
+
+.rounded {
+  border-radius: 5rem;
 }
 </style>

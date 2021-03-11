@@ -82,7 +82,7 @@ export default {
       'bootstrap/scss/_variables.scss',
       'bootstrap/scss/_mixins.scss',
       'bootstrap-vue/src/_variables.scss',
-      './assets/scss/*.scss'
+      './assets/scss/custom.scss'
     ]
   },
   webfontloader: {

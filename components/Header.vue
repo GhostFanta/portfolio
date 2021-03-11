@@ -14,6 +14,11 @@
         <nuxt-link class="z-nav-item" to="/sideproject">Side Project</nuxt-link>
       </li>
       <li>
+        <nuxt-link class="z-nav-item" to="/feelinglucky"
+          >FeelingLucky</nuxt-link
+        >
+      </li>
+      <li>
         <nuxt-link class="z-nav-item" to="/contact">Contact</nuxt-link>
       </li>
     </nav>

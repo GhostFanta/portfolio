@@ -189,5 +189,9 @@ table {
   margin: 0 0 10px 0;
 }
 
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
