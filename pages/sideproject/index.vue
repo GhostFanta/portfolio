@@ -6,7 +6,7 @@
       way to advance my skills.
     </h4>
     <div class="z-side-project-content d-flex">
-      <ProjectCard
+      <!-- <ProjectCard
         v-if="breeder.show"
         :title="breeder.title"
         :subtitle="breeder.subtitle"
@@ -15,7 +15,7 @@
         :to="breeder.to"
         :badges="breeder.badges"
         class="mb-2 mr-2"
-      />
+      /> -->
       <!--      <ProjectCard-->
       <!--        :title="cart.title"-->
       <!--        :subtitle="cart.subtitle"-->
