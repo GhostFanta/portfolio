@@ -11,7 +11,7 @@
       <div class="desp d-flex flex-column v-center">
         <h3>{{ title }}</h3>
         <small>{{ description }}</small>
-        <a class="btn-navigate disabled" :href="link">Go to the app</a>
+        <a :href="link" class="btn-navigate disabled">Go to the app</a>
       </div>
     </div>
   </div>

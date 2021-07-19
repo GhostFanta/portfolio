@@ -34,6 +34,27 @@
         :badges="portfolio.badges"
         class="mb-2 mr-2"
       />
+      <ProjectCard
+        :title="webkeep.title"
+        :subtitle="webkeep.subtitle"
+        :description="webkeep.description"
+        :img="webkeep.img"
+        :to="webkeep.to"
+        :badges="webkeep.badges"
+        class="mb-2 mr-2"
+      />
+
+      <!--      <ProjectCard-->
+      <!--        v-if="dashboard.show"-->
+      <!--        :title="dashboard.title"-->
+      <!--        :subtitle="dashboard.subtitle"-->
+      <!--        :description="dashboard.description"-->
+      <!--        :img="dashboard.img"-->
+      <!--        :to="dashboard.to"-->
+      <!--        :badges="dashboard.badges"-->
+      <!--        class="mb-2 mr-2"-->
+      <!--      />-->
+
       <!--      <ProjectCard-->
       <!--        v-if="dashboard.show"-->
       <!--        :title="dashboard.title"-->
@@ -111,6 +132,22 @@ export default {
         repolink: '',
         img: 'breeder',
         to: '/sideproject/breeder',
+        badges: [
+          {
+            title: 'Nuxt',
+            type: 'success'
+          }
+        ],
+        show: true
+      },
+      webkeep: {
+        title: 'WebKeep',
+        subtitle:
+          'A reserved place to keep your favorite social media contents',
+        description: '',
+        repolink: '',
+        img: 'breeder',
+        to: '/sideproject/webkeep',
         badges: [
           {
             title: 'Nuxt',

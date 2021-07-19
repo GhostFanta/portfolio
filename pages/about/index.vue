@@ -59,14 +59,14 @@
         <span class="z-skill-name">React: </span>
         <div class="progress">
           <div
-            class="progress-bar bg-primary"
+            class="progress-bar bg-success"
             role="progressbar"
-            style="width: 60%"
+            style="width: 75%"
             aria-valuenow="25"
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            Intermediate
+            Proficient
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
           <div
             class="progress-bar bg-blue"
             role="progressbar"
-            style="width: 75%"
+            style="width: 60%"
             aria-valuenow="75"
             aria-valuemin="0"
             aria-valuemax="100"
