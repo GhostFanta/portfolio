@@ -20,6 +20,15 @@
     </p>
     This project is designed to reserve the videos that you like from social
     media platforms including Youtube, Bilibili.
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/7XG7ABhcGTI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
 </template>
 <script>
