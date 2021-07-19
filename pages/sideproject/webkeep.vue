@@ -19,7 +19,7 @@
       Use <strong> portfolio </strong> : <strong> alextest </strong> to login.
     </p>
     This project is designed to reserve the videos that you like from social
-    media platforms including Youtube, Instagram, Bilibili.
+    media platforms including Youtube, Bilibili.
   </div>
 </template>
 <script>
