@@ -5,9 +5,8 @@
       <p class="z-subtitle">A full stack developer</p>
       <p class="z-content">
         <strong>Full-stack software developer</strong> with plenty of experience
-        working on SaaS products. Fall in love with
-        <strong>Javascript & Python</strong>, located in Toronto Area. Eager to
-        create amazing stuffs.
+        working on SaaS products. Located in Toronto Area. Eager to create
+        amazing stuffs.
       </p>
     </div>
     <Footer />
